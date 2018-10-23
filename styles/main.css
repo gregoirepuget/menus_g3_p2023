@@ -46,31 +46,32 @@ header#header a.login{
 
 nav{
   background-color: #FF9900;
-margin-top: 20px;
-}
-
-li.menuItem{
-  list-style: none;
-  float: left;
-  padding: 15px 20px;
+  margin-top: 20px;
   position: relative;
 }
 
-li.menuItem a{
+.menuHorizontal li.menuItem{
+  list-style: none;
+  float: left;
+  padding: 15px 20px;
+
+}
+
+.menuHorizontal li.menuItem a{
 color:#FFF;
 text-transform: uppercase;
 text-decoration: none;
 
 }
 
-li.menuItem:hover a{
+.menuHorizontal li.menuItem:hover a{
   color: #AAA;
 }
-.subMenu{
+.menuHorizontal .subMenu{
   display: none;
 
 }
-li.menuItem:hover .subMenu{
+.menuHorizontal li.menuItem:hover .subMenu{
   display: block;
   position: absolute;
   top: 100%;
@@ -78,9 +79,47 @@ li.menuItem:hover .subMenu{
   list-style: none;
   background-color: black;
   padding: 10px;
-  width: 150px;
+  width: 100%;
 
 }
-li.menuItem .subMenu li{
+
+aside{
+  width:200px;
+  float:left;
+}
+.verticalMenu{
+  margin-left:0;
+  padding:0;
+}
+
+.verticalMenu li{
+  list-style:none;
+  padding:15px;
+  border-bottom:1px solid #FFF;
+  position:relative;
+}
+
+.verticalMenu .subMenu{
+  display: none;
+}
+
+.verticalMenu li.menuItem:hover .subMenu{
+  display:block;
+  position:absolute;
+  top: 0%;
+  left: 100%;
+  list-style: none;
+  background-color: black;
+  padding: 10px;
+  width: 100%;
+}
+
+.menuHorizontal li.menuItem .subMenu li{
   padding:5px;
+}
+
+.verticalMenu a{
+  color:white;
+  text-transform: uppercase;
+  text-decoration:none;
 }
